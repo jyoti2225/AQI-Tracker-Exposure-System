@@ -106,7 +106,7 @@ AQI_Project/
 ## ▶️ How to Run Project
 
 ### Step 1: Clone
-git clone https://github.com/your-username/AQI-Tracker-Exposure-System.git
+git clone https://github.com/jyoti2225/AQI-Tracker-Exposure-System.git
 
 
 ### Step 2: Install packages
