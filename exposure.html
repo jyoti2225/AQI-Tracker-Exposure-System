@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Exposure History - AQI Monitor</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+<header class="navbar">
+    <div class="logo">🌿 AQI Monitor</div>
+
+    <nav class="menu">
+        <a href="/login">Login</a>
+        <a href="/about">About</a>
+        <a href="/">Home</a>
+        <a href="/healthadvisory">Health Advisory</a>
+        <a href="/exposure">Exposure</a>
+        <a href="/logout">Logout</a>
+    </nav>
+
+    <div class="search">
+        <input type="text" id="exposureCityInput" placeholder="Search city" value="Patiala">
+        <button type="button" onclick="loadExposure()">🔍</button>
+    </div>
+</header>
+
+<section class="exposure-container">
+    <h1>Your Air Exposure History</h1>
+
+    <div class="graph-box">
+        <h2>AQI Exposure Over Time</h2>
+        <canvas id="exposureChart"></canvas>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 AQI Exposure Monitoring System</p>
+    <p>Made by Jyoti</p>
+</footer>
+
+<script>
+let exposureChart;
+
+function getShortHourLabels(times) {
+    return times.map(t => {
+        if (!t) return "";
+        const d = new Date(t);
+        if (isNaN(d.getTime())) return String(t);
+
+        let h = d.getHours();
+        const s = h >= 12 ? "PM" : "AM";
+        h = h % 12 || 12;
+        return h + " " + s;
+    });
+}
+
+function loadExposure() {
+    const cityInput = document.getElementById("exposureCityInput");
+    const city = cityInput ? cityInput.value.trim() : "Patiala";
+
+    if (!city) {
+        alert("Enter city");
+        return;
+    }
+
+    fetch(`/api/city_data?city=${encodeURIComponent(city)}`)
+        .then(res => res.json())
+        .then(data => {
+            if (data.error) {
+                alert(data.error);
+                return;
+            }
+
+            const labels = getShortHourLabels((data.hourly.time || []).slice(0, 24));
+            const aqiData = (data.hourly.aqi || []).slice(0, 24);
+
+            if (exposureChart) {
+                exposureChart.destroy();
+            }
+
+            exposureChart = new Chart(document.getElementById("exposureChart"), {
+                type: "line",
+                data: {
+                    labels: labels,
+                    datasets: [{
+                        label: "AQI Exposure",
+                        data: aqiData,
+                        borderColor: "#ff3b3b",
+                        backgroundColor: "rgba(255,59,59,0.2)",
+                        fill: true,
+                        tension: 0.4
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    scales: {
+                        y: {
+                            min: 0,
+                            max: 500
+                        }
+                    }
+                }
+            });
+        })
+        .catch(() => {
+            alert("Exposure data load error");
+        });
+}
+
+window.onload = function () {
+    loadExposure();
+};
+</script>
+
+</body>
+</html>

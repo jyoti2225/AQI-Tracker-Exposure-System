@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AQI Monitor Dashboard</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+<header class="navbar">
+    <div class="logo">🌿 AQI Monitor</div>
+    {% if username %}
+    <p style="color:white; margin:0 15px;">Welcome, {{ username }}</p>
+    {% endif %}
+<nav class="menu">
+           <a href="/">Home</a>
+         <a href="/healthadvisory">Healthadvisory</a>
+        <a href="/exposure">Exposure</a>
+        <a href="/about">About</a>
+         <a href="/login">Login</a>
+        <a href="/logout">Logout</a>
+    </nav>
+<div class="search">
+<input type="text" id="cityInput" placeholder="Search city" value="Patiala">
+    <button type="button" onclick="searchLiveCity()">🔍</button>
+</div>
+</header>
+<section class="cards">
+    <div class="card aqi">
+        <h3>AQI</h3>
+        <h1>0</h1>
+        <p>Moderate</p></div>
+    <div class="card temp">
+        <h3>Temperature</h3>
+        <h1>0°C</h1>
+        <p>Sunny</p></div>
+    <div class="card rain">
+        <h3>Rain</h3>
+        <h1>0%</h1>
+        <p>Chance</p></div>
+    <div class="card uv">
+    <h3>UV Index</h3>
+    <h1>0</h1>
+    <p>Low</p></div>
+</section>
+<section class="graph-box">
+    <h2>Estimated AQI - 24 Hours</h2>
+    <canvas id="aqiChart"></canvas>
+</section>
+<section class="graph-box">
+   <h2>Estimated Temperature -24  Hours</h2>
+   <canvas id="tempChart"></canvas>
+</section>
+<section class="graph-box">
+   <h2>Estimated Rain - 24 Hours</h2>
+    <canvas id="rainChart"></canvas>
+</section>
+<section class="graph-box">
+    <h2>UV Index - 24 Hours</h2>
+    <canvas id="uvChart"></canvas>
+</section>
+<div id="popupBox" class="popup-box" style="display:none;">
+    <div id="popupMessage"></div>
+</div>
+<footer>
+    <p>© 2026 AQI Exposure Monitoring System</p>
+    <p>Made by Jyoti</p></footer>
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

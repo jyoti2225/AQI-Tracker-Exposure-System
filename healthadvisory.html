@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Health Advisory</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<header class="navbar">
+
+<div class="logo">🌿 AQI Monitor</div>
+
+<nav class="menu">
+
+<a href="/">Home</a>
+<a href="/exposure">Exposure</a>
+<a href="/about">About</a>
+<a href="/login">Login</a>
+
+</nav>
+
+<div class="search">
+<input type="text" placeholder="Search city">
+<button>🔍</button>
+</div>
+
+</header>
+<div class="health-container">
+
+<h2 class="title">🌿 Health & UV Advisory</h2>
+
+<div class="grid-2">
+
+    <!-- LEFT SIDE AQI -->
+    <div>
+        <h2 class="sub-title">🌫 AQI Advisory</h2>
+
+        <div class="health-card good">
+            <h3>🟢 Good (0-50)</h3>
+            <p>Air is clean. Safe for all.</p>
+        </div>
+
+        <div class="health-card satisfactory">
+            <h3>🟡 Satisfactory (51-100)</h3>
+            <p>Air is acceptable. Minor issues for sensitive people.</p>
+        </div>
+
+        <div class="health-card moderate">
+            <h3>🟠 Moderate (101-150)</h3>
+            <p>Limit long outdoor exposure.</p>
+        </div>
+
+        <div class="health-card poor">
+            <h3>🔶 Poor (151-200)</h3>
+            <p>Avoid heavy outdoor activity.</p>
+        </div>
+
+        <div class="health-card unhealthy">
+            <h3>🔴 Unhealthy (201-300)</h3>
+            <p>Wear mask. Stay indoors if possible.</p>
+        </div>
+
+    </div>
+
+    <!-- RIGHT SIDE UV -->
+    <div>
+        <h2 class="sub-title">☀️ UV Advisory</h2>
+
+        <div class="health-card uv-low">
+            <h3>🟢 Low (0-2)</h3>
+            <p>Safe to go outside.</p>
+        </div>
+
+        <div class="health-card uv-moderate">
+            <h3>🟡 Moderate (3-5)</h3>
+            <p>Use sunscreen.</p>
+        </div>
+
+        <div class="health-card uv-high">
+            <h3>🟠 High (6-7)</h3>
+            <p>Limit sun exposure.</p>
+        </div>
+
+        <div class="health-card uv-very-high">
+            <h3>🔴 Very High (8-10)</h3>
+            <p>Wear cap & sunglasses.</p>
+        </div>
+
+        <div class="health-card uv-extreme">
+            <h3>🟣 Extreme (11+)</h3>
+            <p>Avoid going outside.</p>
+        </div>
+
+    </div>
+
+</div>
+</div>
+
+<footer>
+
+<p>© 2026 AQI Exposure Monitoring System</p>
+
+<p>Made by Jyoti</p>
+
+</footer>
+</body>
+</html>
