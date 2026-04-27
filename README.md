@@ -145,11 +145,11 @@ More cities
 Email alerts
 
 ![image alt](https://github.com/jyoti2225/AQI-Tracker-Exposure-System/blob/296392999bcbf52eb0aa0acae50fe57f472d49a7/Screenshot%202026-04-19%20185640.png)
-![image alt]()
-![image alt]()
-![image alt]()
-![image alt]()
-![image alt]()
+![image alt](https://github.com/jyoti2225/AQI-Tracker-Exposure-System/blob/257045fa6175b6273d5af5eade3aa217d6169ced/Screenshot%202026-04-19%20185800.png)
+![image alt](https://github.com/jyoti2225/AQI-Tracker-Exposure-System/blob/257045fa6175b6273d5af5eade3aa217d6169ced/Screenshot%202026-04-19%20185920.png)
+![image alt](https://github.com/jyoti2225/AQI-Tracker-Exposure-System/blob/257045fa6175b6273d5af5eade3aa217d6169ced/Screenshot%202026-04-19%20190051.png)
+![image alt](https://github.com/jyoti2225/AQI-Tracker-Exposure-System/blob/257045fa6175b6273d5af5eade3aa217d6169ced/Screenshot%202026-04-19%20190126.png)
+![image alt](https://github.com/jyoti2225/AQI-Tracker-Exposure-System/blob/257045fa6175b6273d5af5eade3aa217d6169ced/Screenshot%202026-04-19%20190208.png)
 
 Author
 Jyoti
