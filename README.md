@@ -143,7 +143,13 @@ Real-time API
 Mobile app
 More cities
 Email alerts
+
 ![image alt](https://github.com/jyoti2225/AQI-Tracker-Exposure-System/blob/296392999bcbf52eb0aa0acae50fe57f472d49a7/Screenshot%202026-04-19%20185640.png)
+![image alt]()
+![image alt]()
+![image alt]()
+![image alt]()
+![image alt]()
 
 Author
 Jyoti
