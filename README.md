@@ -136,13 +136,18 @@ def get_connection():
 
 Step 5: Run
 python app.py
+
+
 Step 6: Open
 http://localhost:5000
+
+
 🔮 Future Scope
 Real-time API
 Mobile app
 More cities
 Email alerts
+
 
 ![image alt](https://github.com/jyoti2225/AQI-Tracker-Exposure-System/blob/296392999bcbf52eb0aa0acae50fe57f472d49a7/Screenshot%202026-04-19%20185640.png)
 ![image alt](https://github.com/jyoti2225/AQI-Tracker-Exposure-System/blob/257045fa6175b6273d5af5eade3aa217d6169ced/Screenshot%202026-04-19%20185800.png)
@@ -150,6 +155,12 @@ Email alerts
 ![image alt](https://github.com/jyoti2225/AQI-Tracker-Exposure-System/blob/257045fa6175b6273d5af5eade3aa217d6169ced/Screenshot%202026-04-19%20190051.png)
 ![image alt](https://github.com/jyoti2225/AQI-Tracker-Exposure-System/blob/257045fa6175b6273d5af5eade3aa217d6169ced/Screenshot%202026-04-19%20190126.png)
 ![image alt](https://github.com/jyoti2225/AQI-Tracker-Exposure-System/blob/257045fa6175b6273d5af5eade3aa217d6169ced/Screenshot%202026-04-19%20190208.png)
+![image alt](https://github.com/jyoti2225/AQI-Tracker-Exposure-System/blob/37e5d67ee1def4871d357c0a668ba89ab2150965/Screenshot%202026-04-19%20191350.png)
+![image alt](https://github.com/jyoti2225/AQI-Tracker-Exposure-System/blob/37e5d67ee1def4871d357c0a668ba89ab2150965/Screenshot%202026-04-19%20190722.png)
+![image alt](https://github.com/jyoti2225/AQI-Tracker-Exposure-System/blob/37e5d67ee1def4871d357c0a668ba89ab2150965/Screenshot%202026-04-19%20190429.png)
+![image alt](https://github.com/jyoti2225/AQI-Tracker-Exposure-System/blob/37e5d67ee1def4871d357c0a668ba89ab2150965/Screenshot%202026-04-19%20190516.png)
+![image alt](https://github.com/jyoti2225/AQI-Tracker-Exposure-System/blob/37e5d67ee1def4871d357c0a668ba89ab2150965/Screenshot%202026-04-19%20190636.png)
+
 
 Author
 Jyoti
