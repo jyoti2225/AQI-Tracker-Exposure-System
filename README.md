@@ -134,19 +134,24 @@ def get_connection():
         dsn="localhost:1521/XEPDB1"
     )
 
+---
+
 Step 5: Run
 python app.py
 
+---
 
 Step 6: Open
 http://localhost:5000
 
+---
 
 🔮 Future Scope
 Real-time API
 Mobile app
 More cities
 Email alerts
+---
 
 
 ![image alt](https://github.com/jyoti2225/AQI-Tracker-Exposure-System/blob/296392999bcbf52eb0aa0acae50fe57f472d49a7/Screenshot%202026-04-19%20185640.png)
